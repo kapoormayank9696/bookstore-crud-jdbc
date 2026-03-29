@@ -1,0 +1,64 @@
+CREATE DATABASE Bookstore_Management;
+USE Bookstore_Management;
+
+
+CREATE TABLE users
+(
+id int AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(50) NOT NULL,
+email VARCHAR(100) UNIQUE NOT NULL,
+password VARCHAR(100) NOT NULL
+);
+
+
+CREATE TABLE books
+(
+id int AUTO_INCREMENT PRIMARY KEY,
+title VARCHAR(100) NOT NULL,
+author VARCHAR(100) NOT NULL,
+price DECIMAL(10,2) NOT NULL,
+stock INTEGER NOT NULL
+);
+
+
+CREATE TABLE orders
+(
+id int AUTO_INCREMENT PRIMARY KEY,
+user_id int NOT NULL,
+total_amount DECIMAL(10,2) NOT NULL,
+order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+
+CREATE TABLE order_items
+(
+id int AUTO_INCREMENT PRIMARY KEY NOT NULL,
+order_id INT NOT NULL,
+book_id INT NOT NULL,
+quantity INT DEFAULT 1,
+price DECIMAL(10,2) NOT NULL,
+FOREIGN KEY(order_id) REFERENCES orders(id) ON DELETE CASCADE,
+FOREIGN KEY(book_id) REFERENCES books(id) 
+);
+
+
+INSERT INTO books(title, author, price, stock) VALUES
+('Java Basics', 'James Gosling', 500, 10),
+('Effective Java', 'Joshua Bloch', 850, 8),
+('Clean Code', 'Robert C. Martin', 900, 6),
+('Head First Java', 'Kathy Sierra', 750, 7),
+('Spring in Action', 'Craig Walls', 950, 5),
+('Design Patterns', 'Erich Gamma', 1200, 4),
+('Data Structures and Algorithms', 'Robert Lafore', 700, 9),
+('Java Concurrency in Practice', 'Brian Goetz', 1100, 3),
+('The Pragmatic Programmer', 'Andrew Hunt', 1000, 6),
+('Introduction to Algorithms', 'Thomas H. Cormen', 1500, 2);
+
+SELECT * FROM books;
+SELECT * FROM users;
+SELECT * FROM orders;
+SELECT * FROM order_items;
+
+-- DROP DATABASE bookstore_management;
+-- DELETE FROM users WHERE id > 0;
