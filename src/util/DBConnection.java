@@ -1,4 +1,4 @@
-package Book_Store_Management_System.util;
+package Book_Store_Management_System.src.util;
 
 import java.sql.*;
 

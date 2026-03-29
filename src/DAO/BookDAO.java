@@ -1,7 +1,7 @@
-package Book_Store_Management_System.DAO;
+package Book_Store_Management_System.src.DAO;
 
-import Book_Store_Management_System.model.Book;
-import Book_Store_Management_System.util.DBConnection;
+import Book_Store_Management_System.src.model.Book;
+import Book_Store_Management_System.src.util.DBConnection;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -106,7 +106,7 @@ public class BookDAO {
                 book.setStock(resultSet.getInt("stock"));
             }
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+                System.err.println("Error in getBookById: " + e.getMessage());
         }
         return book;
     }

@@ -1,4 +1,4 @@
-package Book_Store_Management_System.model;
+package Book_Store_Management_System.src.model;
 
 public class Book {
 

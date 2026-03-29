@@ -1,4 +1,4 @@
-package Book_Store_Management_System.model;
+package Book_Store_Management_System.src.model;
 
 public class User {
 
@@ -13,10 +13,10 @@ public class User {
 
     // Parameterized Constructor
     public User(int id,String name,String email,String password) {
-        this.id=id;
-        this.name=name;
-        this.email=email;
-        this.password=password;
+        this.setId(id);
+        this.setName(name);
+        this.setEmail(email);
+        this.setPassword(password);
     }
 
     // Setters
@@ -39,7 +39,7 @@ public class User {
         if (password == null || password.trim().isEmpty()) {
             throw new IllegalArgumentException("Password cannot be empty");
         }
-        this.password=password;
+        this.password=password; // store plain text here; hash in DAO
     }
 
     // Getters
