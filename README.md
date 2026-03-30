@@ -120,8 +120,17 @@ Orders automatically update book stock.
 Input validation is implemented for user and book details.
 ---
 
+### 🎯 Key Concepts Used
+OOP (Encapsulation, Classes)
+JDBC
+SQL (CRUD operations)
+Hashing (BCrypt)
+Layered architecture (DAO pattern)
+---
+
 ### 🚀 Future Improvements
 Use a database for admin authentication instead of hardcoded credentials.
 Implement order history for users.
 Add a GUI for a better user experience.
 Support multiple admin users with roles and permissions.
+---
