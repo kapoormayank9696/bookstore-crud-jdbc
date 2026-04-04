@@ -31,9 +31,8 @@ Book_Store_Management_System/
 - │  ├─ model/        # Model classes: User, Book, Order
 - │  ├─ util/         # DBConnection utility
 - │  └─ Main.java     # Main entry point
-- │
-- ├─ lib/             # External libraries (MySQL connector, BCrypt)
-- 
+- │  └─ lib/             # External libraries (MySQL connector, BCrypt)
+- |
 - └─ README.md
 
 ---
