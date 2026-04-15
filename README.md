@@ -1,38 +1,55 @@
-### 📚 Book Store Management System
-
-A console-based Book Store Management System in Java that allows users to register, login, view books, place orders, and for admins to manage the store inventory.
+# 📚 Book Store Management System
+[![Java](https://img.shields.io/badge/Java-17+-blue)](https://www.oracle.com/java/)
+[![MySQL](https://img.shields.io/badge/MySQL-8+-green)](https://www.mysql.com/)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+A console-based Book Store Management System in Java that allows users to register, login, view books, place orders, and for admins to manage the store inventory. Implements JDBC, DAO pattern, and secure password storage with BCrypt.
 
 
 ---
 
-### ✅ Features
-User Features
-Register with name, email, and password (hashed using BCrypt).
-Login with email and password.
-View Books: See all available books with price and stock.
-Place Orders: Buy books, with stock validation.
-Admin Features
-Add Book: Add new books to the store.
-Update Book: Update book details (title, author, price, stock).
-Delete Book: Remove books from the store.
-View Books: List all books in the store.
+✅ Features
 
+User Features
+
+Register with name, email, and password (hashed using BCrypt)
+Login with email and password
+View all available books with price and stock
+Place orders with automatic stock validation
+
+Admin Features
+
+Add, update, and delete books
+View all books in inventory
 Admin credentials (hardcoded):
 Username: admin
 Password: 1234
 
 ---
 
-### 🗂 Project Structure
+## Technologies Used
+
+- **Java 17+**
+- **MySQL 8+**
+- **JDBC** for database connectivity
+- **DAO Design Pattern** for database operations
+- **Service Layer** for business logic
+- **Console-based UI** using `Scanner`
+
+---
+
+## 🗂 Project Structure
 Book_Store_Management_System/
-- │
-- ├─ src/
-- │  ├─ DAO/          # Data Access Objects: UserDAO, BookDAO, OrderDAO
-- │  ├─ model/        # Model classes: User, Book, Order
-- │  ├─ util/         # DBConnection utility
-- │  └─ Main.java     # Main entry point
-- │  └─ lib/             # External libraries (MySQL connector, BCrypt)
-- |
+│
+├─ src/
+│  ├─ DAO/           # Data Access Objects: UserDAO, BookDAO, OrderDAO
+│  ├─ model/         # Model classes: User, Book, Order, OrderItem
+│  ├─ service/       # Business logic layer
+│  ├─ util/          # DBConnection utility
+│  └─ Main.java      # Entry point
+│
+├─ lib/              # External libraries (MySQL connector, BCrypt)
+└─ README.md
+- 
 - └─ README.md
 
 ---
@@ -119,12 +136,19 @@ Orders automatically update book stock.
 Input validation is implemented for user and book details.
 ---
 
-### 🎯 Key Concepts Used
-OOP (Encapsulation, Classes)
-JDBC
-SQL (CRUD operations)
-Hashing (BCrypt)
-Layered architecture (DAO pattern)
+### License 📝
+This project is open-source and available under the MIT License.
+
+Author
+
+Mayank Kapoor
+GitHub: https://github.com/kapoormayank9696
+---
+
+If you want, I can also **make a shorter, more attractive GitHub-ready version** that looks modern with badges for Java, MySQL, and license.  
+
+Do you want me to do that version too?
+
 ---
 
 ### 🚀 Future Improvements
@@ -132,4 +156,3 @@ Use a database for admin authentication instead of hardcoded credentials.
 Implement order history for users.
 Add a GUI for a better user experience.
 Support multiple admin users with roles and permissions.
----
