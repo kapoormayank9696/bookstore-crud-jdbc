@@ -65,6 +65,7 @@ jbcrypt-0.4.jar
 
 ### 🗄 Database Setup
 
+```sql
 Create a database (e.g., book_store) and tables:
 
 CREATE TABLE users (
@@ -99,6 +100,7 @@ CREATE TABLE order_items (
     FOREIGN KEY (book_id) REFERENCES books(id)
 );
 
+```
 ---
 
 ### ▶️ How to Run
