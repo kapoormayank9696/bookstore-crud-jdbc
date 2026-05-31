@@ -39,7 +39,7 @@ Password: 1234
 
 ## 🗂 Project Structure
 Book_Store_Management_System/
-│
+
 - ├─ src/
 - │  ├─ DAO/           # Data Access Objects: UserDAO, BookDAO, OrderDAO
 - │  ├─ model/         # Model classes: User, Book, Order, OrderItem
@@ -48,8 +48,6 @@ Book_Store_Management_System/
 - │  └─ Main.java      # Entry point
 - │
 - ├─ lib/              # External libraries (MySQL connector, BCrypt)
-- └─ README.md
-- 
 - └─ README.md
 
 ---
