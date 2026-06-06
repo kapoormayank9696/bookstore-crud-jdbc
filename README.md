@@ -7,7 +7,7 @@ A console-based Book Store Management System in Java that allows users to regist
 
 ---
 
-✅ Features
+# ✅ Features
 
 User Features
 
@@ -26,7 +26,7 @@ Password: 1234
 
 ---
 
-## Technologies Used
+# Technologies Used
 
 - **Java 17+**
 - **MySQL 8+**
@@ -37,7 +37,7 @@ Password: 1234
 
 ---
 
-## 🗂 Project Structure
+# 🗂 Project Structure
 Book_Store_Management_System/
 
 - ├─ src/
@@ -52,7 +52,7 @@ Book_Store_Management_System/
 
 ---
 
-### ⚙️ Requirements
+# ⚙️ Requirements
 Java JDK 17+ (tested with JDK 24)
 MySQL Database (or PostgreSQL if configured)
 External libraries (add to project classpath if not using Maven):
@@ -61,7 +61,7 @@ jbcrypt-0.4.jar
 
 ---
 
-### 🗄 Database Setup
+# 🗄 Database Setup
 
 ```sql
 Create a database (e.g., book_store) and tables:
@@ -101,7 +101,7 @@ CREATE TABLE order_items (
 ```
 ---
 
-### ▶️ How to Run
+# ▶️ How to Run
 Open the project in IntelliJ IDEA.
 Add external libraries to the project (if not using Maven):
 mysql-connector-java-9.4.0.jar
@@ -112,7 +112,7 @@ Use the console menu to interact with the system.
 
 ---
 
-### 📝 Usage
+# 📝 Usage
 Main Menu
 1. Register
 2. Login
@@ -129,14 +129,14 @@ Exit: Close the application.
 
 ---
 
-### ⚠️ Notes
+# ⚠️ Notes
 Passwords are stored securely using BCrypt hashing.
 Admin login is currently hardcoded (admin / 1234).
 Orders automatically update book stock.
 Input validation is implemented for user and book details.
 ---
 
-### License 📝
+# License 📝
 This project is open-source and available under the MIT License.
 
 Author
@@ -151,7 +151,7 @@ Do you want me to do that version too?
 
 ---
 
-### 🚀 Future Improvements
+# 🚀 Future Improvements
 Use a database for admin authentication instead of hardcoded credentials.
 Implement order history for users.
 Add a GUI for a better user experience.
