@@ -44,6 +44,7 @@ Book_Store_Management_System/
 - │  ├─ DAO/           # Data Access Objects: UserDAO, BookDAO, OrderDAO
 - │  ├─ model/         # Model classes: User, Book, Order, OrderItem
 - │  ├─ service/       # Business logic layer
+- |  ├─ screenshots/
 - │  ├─ util/          # DBConnection utility
 - │  └─ Main.java      # Entry point
 - │
