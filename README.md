@@ -3,8 +3,6 @@
 [![MySQL](https://img.shields.io/badge/MySQL-8+-green)](https://www.mysql.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 A console-based Book Store Management System in Java that allows users to register, login, view books, place orders, and for admins to manage the store inventory. Implements JDBC, DAO pattern, and secure password storage with BCrypt.
-
-
 ---
 
 # ✅ Features
